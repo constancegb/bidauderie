@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* Supprime les marges sur tous le site */
+body {
+  margin:0;
+}
+
+
+/*
+|   |  |---|   |\_/|   |---
+|---|  |   |   |   |   |--
+|   |  |___|   |   |   |___
+*/
+
+/* NAVIGATION */
+#brand-logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+nav.navbar {
+  min-height: 70px;
+}
+
+ul.navbar-nav li a {
+ line-height: 4rem;
+}
+
+.navbar-header button {
+  margin-top: 16px;
+  margin-bottom: 16px;
+ line-height: 4rem;
+}
+
+
+/*HOME SCREEN*/
+#backimage div {
+    background: url(../img/equipe.jpg) no-repeat center center fixed;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:680px;
+}
+
+#backimage p {
+  font-size: 5rem;
+}
