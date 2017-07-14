@@ -6,12 +6,56 @@ body {
   margin:0;
 }
 
+/*FONT SIZES*/
+@media screen and (max-width: 767px) {
+    div#title p {
+        font-size: 1.7em;
+    }
+    #welcome-to-vierzon div:last-child p {
+        font-size: 1.4em;
+    }
+    #buttons {
+        flex-direction: column;  
+    }
+    #meet {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    div#title p {
+        font-size: 3em;
+    }
+    #welcome-to-vierzon div:last-child p {
+        font-size: 1.6em;
+    }
+    #buttons {
+        flex-direction: row;   
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div#title p {
+        font-size: 4em;
+    }
+    #welcome-to-vierzon div:last-child p {
+        font-size: 2em;
+        width: 200%;
+    }
+    #buttons {
+        flex-direction: row;  
+    }
+}
+
 
 /*
-|   |  |---|   |\_/|   |---
-|---|  |   |   |   |   |--
-|   |  |___|   |   |   |___
+|    |  |----|   |\  /|   |----
+|    |  |    |   | \/ |   |
+|----|  |    |   |    |   |---
+|    |  |    |   |    |   |
+|    |  |____|   |    |   |____
 */
+
 
 /* NAVIGATION */
 #brand-logo {
@@ -21,6 +65,7 @@ body {
 
 nav.navbar {
   min-height: 70px;
+  background-color: #31485e;
 }
 
 ul.navbar-nav li a {
@@ -34,17 +79,506 @@ ul.navbar-nav li a {
 }
 
 
-/*HOME SCREEN*/
-#backimage div {
-    background: url(../img/equipe.jpg) no-repeat center center fixed;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    height:680px;
+/*LANDING*/
+.landing-bg {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
-#backimage p {
-  font-size: 5rem;
+#equipe-img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
+
+
+.landing-bg #title p {
+  color: white;
+  font-family: 'Anton';
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(34, 34, 34, 0.8);
+}
+
+.landing-bg #title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+}
+
+.landing-bg #arrow {
+  position: absolute;
+  bottom: 10px;
+  width: 212px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p span.spacer {
+    padding: 0 0.3em;
+}
+
+#arrow-img {
+    width: 150px;
+    height: 60px;
+}
+
+
+/*WELCOME TO VIERZON*/
+#welcome-to-vierzon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+/*  color: white;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+
+#welcome-to-vierzon div:first-child p {
+  height: auto;
+  position: relative;
+  color: #34495e;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 0;
+}
+
+#welcome-to-vierzon div:first-child {
+  background-color: #ecf0f1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#welcome-to-vierzon img {
+  width: 15%;
+}
+
+
+/*BANDEAU DISCIPLINES */
+#disciplines {
+  width: 100%;
+  height: 95px;
+  background-color: #34495e;
+  margin-bottom: 90px;
+}
+
+#disciplines .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+}
+
+
+#disc-title p {
+  color: white;
+  font-family: 'Anton';
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+#disc-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#disc-icons div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: #e74c3c;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+#disc-icons img {
+  width: 35px;
+  height: 35px;
+}
+
+button #know-more {
+    color: white;
+    font-family: 'Roboto', sans serif;
+    font-weight: lighter;
+}
+
+button #know-more:hover {
+    text-decoration: none;
+}
+
+.content button:hover {
+  -webkit-box-shadow: 0px 0px 13px -2px white;
+  -moz-box-shadow: 0px 0px 13px -2px white;
+  box-shadow: 0px 0px 13px -2px white;
+}
+
+
+/*EQUIT POUR TOUS*/
+#equitation-pour-tous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#eq-title {
+  color: #34495e;
+  font-family: 'Roboto';
+  font-size: 4.5em;
+  margin-bottom: 50px;
+}
+
+#equitation-pour-tous-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #34495e;
+  width: 100%;
+}
+
+#eq-bloc-1 {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/cours-equit-opac.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#eq-bloc-1:hover {
+  background-image: url(../img/cours-equit.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#eq-bloc-2 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ecuries-prop {
+  background-image: url(../img/ecuries-prop-opac.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 33.34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ecuries-prop:hover {
+  background-image: url(../img/ecuries-prop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#accueil-collectivites {
+  background-image: url(../img/groupe1-opac.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#accueil-collectivites:hover {
+  background-image: url(../img/groupe1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#formation-moniteurs {
+  background-image: url(../img/formation2-opac.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#formation-moniteurs:hover {
+  background-image: url(../img/formation2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#equitation-pour-tous-container p {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+}
+
+/* PARTENAIRES */
+#partenaires-container {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100px;
+}
+
+#partenaires-container .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+}
+
+#partenaires-title p {
+  color: #34495e;
+  font-family: 'Anton';
+  font-size: 1.5em;
+  margin-bottom: 0;
+  padding: 10px
+}
+
+#partenaires-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#partenaires-icons p {
+  font-family: 'Dancing Script';
+  color: #34495e;
+  font-size: 1.2em;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#partenaires-icons img {
+  width: 70px;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+button #see-more {
+    color: #34495e;
+    font-family: 'Roboto', sans serif;
+    font-weight: lighter;
+}
+
+button #see-more:hover {
+    text-decoration: none;
+}
+
+#button button {
+    border: 1px solid #34495e;
+}
+
+#button button:hover {
+  -webkit-box-shadow: 0px 0px 13px -2px #34495e;
+  -moz-box-shadow: 0px 0px 13px -2px #34495e;
+  box-shadow: 0px 0px 13px -2px #34495e;
+}
+
+/*BOTTOM*/
+
+#equipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 50px 0;
+}
+
+#equipe-desc p {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 2.3em;
+  color: #34495e;
+}
+
+#equipe-desc {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#meet {
+    border: 1px solid #34495e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#write {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#meet a {
+    color: #34495e;
+}
+
+#write a {
+    color: white;
+}
+
+#write:hover {
+    background-color: #34495e;
+}
+
+#meet a:hover,
+#write a:hover {
+    text-decoration: none;
+}
+
+#buttons button:hover {
+  -webkit-box-shadow: 0px 0px 13px -2px #34495e;
+  -moz-box-shadow: 0px 0px 13px -2px #34495e;
+  box-shadow: 0px 0px 13px -2px #34495e;
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: #34495e;
+  width: 100%;
+  height: 230px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  padding-top: 20px;
+  font-family: 'Roboto';
+  font-weight: lighter;
+}
+
+#footer1-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+#map-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#address p {
+  font-family: 'Roboto';
+  font-size: 0.8em;
+  color: white;
+  padding-left: 10px;
+}
+
+#plan-site {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#plan-site li a {
+  font-family: 'Roboto';
+  font-size: 0.9em;
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  margin: 5px;
+}
+
+#plan-site li a:hover {
+  text-decoration: underline;
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-title p {
+  font-family: 'Dancing Script';
+  font-size: 1.4em;
+  color: white;
+}
+
+#logo-social {
+  margin: 10px;
+}
+
+#logo-social img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+#footer2-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer2-container li {
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-size: 0.6em;
+  color: white;
+  padding: 5px;
+}
+
+#footer2-container li a {
+  font-family: 'Roboto';
+  color: white;
+  padding: 5px;
+}
+

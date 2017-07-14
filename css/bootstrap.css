@@ -3058,8 +3058,8 @@ fieldset[disabled] a.btn {
 }
 .btn-default {
   color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: white;
 }
 .btn-default:focus,
 .btn-default.focus {
@@ -3069,8 +3069,8 @@ fieldset[disabled] a.btn {
 }
 .btn-default:hover {
   color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #2f79b9;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3115,8 +3115,8 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #34495e;
+  border-color: #34495e;
 }
 .btn-primary:focus,
 .btn-primary.focus {
