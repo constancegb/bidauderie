@@ -582,3 +582,61 @@ footer {
   padding: 5px;
 }
 
+
+/*
+|----|  |----|   |----|  --|--  |----  |\   |
+|    |  |    |   |    |    |    |      | \  |
+|----|  |----|   |----|    |    |---   |  \ |
+|       |    |   | \       |    |      |   \|
+|       |    |   |  \      |    |____  |    |.....
+*/
+
+
+.partenaires-container {
+    margin-top: 110px;
+}
+
+#partenaires-title p {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 3em;
+  color: #34495e;
+}
+
+#partenaires-title {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*
+#img1 {
+  background-image: url("img/partenaires/centre.png");
+  background-size:cover;
+    height: 300px;
+}
+
+#img2 {
+  background-image: url("img/partenaires/cer.png");
+  background-size:contain;
+}
+
+#img3 {
+  background-image: url("img/partenaires/fafsea.png");
+  background-size:contain;
+}
+
+#img4 {
+  background-image: url("img/partenaires/cher.png");
+  background-size:contain;
+}
+
+#img5 {
+  background-image: url("img/partenaires/millet.png");
+  background-size:contain;
+}
+
+#img6 {
+  background-image: url("img/partenaires/vierzon.png");
+  background-size:contain;
+}*/
