@@ -20,6 +20,9 @@ body {
     #meet {
         margin-bottom: 20px;
     }
+    .info-map {
+        margin-top: 90px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -31,6 +34,9 @@ body {
     }
     #buttons {
         flex-direction: row;   
+    }
+    .info-map {
+        margin-top: 120px;
     }
 }
 
@@ -44,6 +50,9 @@ body {
     }
     #buttons {
         flex-direction: row;  
+    }
+    .info-map {
+        margin-top: 120px;
     }
 }
 
@@ -364,7 +373,7 @@ button #know-more:hover {
   height: inherit;
 }
 
-#partenaires-title p {
+.partenaires-title p {
   color: #34495e;
   font-family: 'Anton';
   font-size: 1.5em;
@@ -583,6 +592,308 @@ footer {
 }
 
 
+
+
+
+/*
+|----|   |----|   |----  |----   |----  |\   |  --|--
+|    |   |    |   |      |       |      | \  |    |
+|----|   |----|   |---   |---|   |---   |  \ |    |
+|        | \      |          |   |      |   \|    |
+|        |  \     |____  ____|   |____  |    |    |....
+*/
+
+
+/* ------ HISTOIRE DU CLUB ------- */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.section-title p {
+  font-size: 3em;
+  color: #34495e;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+#histoire-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url(../img/histoire.jpg);
+  background-position: bottom right;
+  background-size: cover;
+    margin-top: 20px;
+}
+
+#histoire-container {
+    padding-top: 2em;
+}
+
+#histoire-txt p {
+  color: #34495e;
+  font-size: 1.3em;
+  font-family: Roboto;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+#histoire-txt a:hover {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+
+/* ------ EMPLOYES ------ */
+
+.employes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 350px;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border: 10px solid white;
+  border-radius: 1px;
+  margin-top: 50px;
+  
+}
+
+#employes-img img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+}
+
+#employes-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#employes-txt p {
+  text-align: center;
+  line-height: 17px;
+  color: #34495e;
+  font-family: Roboto;
+  font-weight: lighter;
+}
+
+#employes-txt p:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#employes-txt p:nth-child(2) {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-bottom: 18px;
+}
+
+#employes-txt p:nth-child(2) {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.info-diplome {
+  font-family: 'Roboto';
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.info-diplome span {
+  font-weight: bolder;
+}
+
+
+/* ------ CAVALERIE ------*/
+
+.poney-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chevaux {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 10%;
+  background-image: url(../img/chevaux.jpg);
+  background-size: 100%;
+}
+
+#grands-poneys {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 10%;
+  background-image: url(../img/double.jpg);
+  background-size: 100%;
+}
+
+#shet {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 10%;
+  background-image: url(../img/shet.jpg);
+  background-size: 100%;
+}
+
+#poney-proprietaires {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 10%;
+  background-image: url(../img/proprio.jpg);
+  background-size: 100%;
+}
+
+#type-desc p {
+  color: #34495e;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* ------ INSTALLATIONS ------ */
+
+#installations-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#installations-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: auto;
+}
+
+.carousel-item img {
+  width: 500px;
+  height: 400px;
+}
+
+.carousel {
+  margin-left: 50px;
+}
+
+#installations-desc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#installations-desc-container ul {
+  width: 400px;
+  margin-top: 30px;
+}
+
+#installations-desc-container li {
+  list-style-type: circle;
+  margin: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+|----   |----|   |     |      |----    |----  --|----   
+|       |    |   |     |      |        |        |        
+|       |    |   |     |      |---     |        |        
+|       |    |   |     |      |        |        |        
+|____   |____|   |____ |____  |____    |____    |  ...      
+*/
+
+.bg-collectivites {
+  background-image: url(../img/diapo2.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  z-index: -1;
+  position: relative;
+  max-width: 100vw;
+  height:auto;
+  width:auto;
+  min-height:100vh;
+}
+
+.groupe-container {
+    margin-top: 100px;
+}
+
+/*FORMULAIRE*/
+
+.col-left {
+    border-right: 1px solid white;
+}
+
+input, select, textarea {
+    width: 80%;
+    min-height: 50px;
+    margin-bottom: 10px !important;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+/*DESCRIPTIF*/
+
+.col-right {
+    color: white;
+}
+
+
+
+
+
+
+
+
+/*
+---|---  |----|   |----|    |    |----  
+   |     |    |   |    |    |    |      
+   |     |----|   |----|    |    |---   
+   |     |    |   | \       |    |      
+   |     |    |   |  \      |    |      
+*/
+
+
+.tarifs-container {
+    margin-top: 70px;
+}
+
+body.tarif {
+    background-image: url('img/tarif-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
 /*
 |----|  |----|   |----|  --|--  |----  |\   |
 |    |  |    |   |    |    |    |      | \  |
@@ -609,34 +920,92 @@ footer {
     text-align: center;
     margin-bottom: 30px;
 }
+    
+
+
+
+
+
+
 /*
-#img1 {
-  background-image: url("img/partenaires/centre.png");
-  background-size:cover;
-    height: 300px;
+|----   |----|   |\   |  --|--  |----|  |----  ——|——
+|       |    |   | \  |    |    |    |  |        |
+|       |    |   |  \ |    |    |----|  |        |
+|       |    |   |   \|    |    |    |  |        |
+|____   |____|   |    |    |    |    |  |____    |
+*/
+
+/*BG & Map-Info*/
+
+.bg-contact {
+  background-image: url(../img/diapo1.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  z-index: -1;
+  position: relative;
+  max-width: 100vw;
+  height:auto;
+  width:auto;
+  min-height:100vh;
 }
 
-#img2 {
-  background-image: url("img/partenaires/cer.png");
-  background-size:contain;
+.div-black {
+  z-index: 0;
+  min-width: 100vw;
+  height:auto;
+  width:auto;
+  min-height:100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
 }
 
-#img3 {
-  background-image: url("img/partenaires/fafsea.png");
-  background-size:contain;
+.map {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
-#img4 {
-  background-image: url("img/partenaires/cher.png");
-  background-size:contain;
+iframe {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    height: 40vh;
 }
 
-#img5 {
-  background-image: url("img/partenaires/millet.png");
-  background-size:contain;
+.info {
+    border: 1px solid white;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#img6 {
-  background-image: url("img/partenaires/vierzon.png");
-  background-size:contain;
+.info p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.05em;
+    
+}
+
+.info p:first-child {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.8em;
+}
+
+/*FORM*/
+
+/*
+.left-col,
+.right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, select, textarea {
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white !important;
 }*/
