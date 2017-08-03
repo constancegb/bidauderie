@@ -33,21 +33,21 @@
           <li><a href="presentation.html">Présentation</a></li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Activités <strong class="caret"></strong></a>
             <ul class="dropdown-menu">
-              <li> <a href="centre-equestre.html">Centre Équestre</a></li>
-              <li> <a href="collectivites.html">Collectivités</a></li>
-              <li> <a href="formation-diplomante.html">Centre de formation</a></li>
+              <li> <a href="centre-equestre.html" class='untoggled'>Centre Équestre</a></li>
+              <li> <a href="collectivites.html" class='untoggled'>Collectivités</a></li>
+              <li> <a href="formation-diplomante.html" class='untoggled'>Centre de formation</a></li>
             </ul>
           </li>
           <li><a href="tarifs.html">Tarifs</a></li>
 
           <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">À Propos <strong class="caret"></strong></a>
             <ul class="dropdown-menu">
-              <li> <a href="partenaires.html">Partenaires</a></li>
+              <li> <a href="contact.html" class='untoggled'>Contact</a></li>
+              <li> <a href="partenaires.html" class='untoggled'>Partenaires</a></li>
               <li class='divider'></li>
-              <li> <a href="https://www.facebook.com/Espace-%C3%89questre-de-la-Bidauderie-1384011688304970/">Page Facebook</a></li>
-              <li> <a href="contact.html">Contact</a></li>
+              <li> <a target="_blank" href="https://www.facebook.com/Espace-%C3%89questre-de-la-Bidauderie-1384011688304970/" class='untoggled'>Page Facebook</a></li>
             </ul>
-            <li><a href="#" style="font-weight:bold">06.65.39.04.48</a></li>
+            <li><a href="contact.html" style="font-weight:bold">06.65.39.04.48</a></li>
           </li>
         </ul>
       </div>
@@ -114,6 +114,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
 
+  <footer>
+      <div class='container footer-container'>
+          <div class="footer-map col-md-4 col-sm-4 col-xs-12">
+            <iframe class='footer-frame' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.524235082784!2d2.0898604152647438!3d47.24545137916235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fada4641f015c9%3A0x58687334a497320e!2sLa+Bidauderie!5e0!3m2!1sen!2sfr!4v1488295245317" width="170" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="footer-address">
+                <p>La Bidauderie Equitation</p>
+                <p>Route de Neuvy - 18100 Vierzon<br>06 65 39 04 48<br>02 48 71 68 82</p>
+            </div>
+          </div>
+
+          <div class="footer-nav col-md-4 col-sm-4 col-xs-12">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+            </ul>
+            <ul>
+                <li><a href="centre-equestre.html">Centre Équestre</a></li>
+                <li><a href="collectivites.html">Collectivités</a></li>
+                <li><a href="formation-diplomante.html">Formation</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social col-md-4 col-sm-4 col-xs-12">
+            <div id="social-title">
+                <p>Rejoignez-nous !</p>
+            </div>
+            <div id="logo-social">
+                <img src='img/facebook.png' class="js-social2">
+            </div>
+          </div>
+      </div>
+  </footer>
+
+  <div class="legal-container">
+      <p style='margin-right:15px;'>Mentions Légales</p>
+      <p>|</p>
+      <p style='margin-left:15px;'>Site réalisé par  <a target="_blank"  href='https://www.linkedin.com/in/constancegobert/'>Constance Gobert</a></p>
+  </div>
 
   </body>
   </html>

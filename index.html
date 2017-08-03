@@ -33,21 +33,21 @@
           <li><a href="presentation.html">Présentation</a></li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Activités <strong class="caret"></strong></a>
             <ul class="dropdown-menu">
-              <li> <a href="centre-equestre.html">Centre Équestre</a></li>
-              <li> <a href="collectivites.html">Collectivités</a></li>
-              <li> <a href="formation-diplomante.html">Centre de formation</a></li>
+              <li> <a href="centre-equestre.html" class='untoggled'>Centre Équestre</a></li>
+              <li> <a href="collectivites.html" class='untoggled'>Collectivités</a></li>
+              <li> <a href="formation-diplomante.html" class='untoggled'>Centre de formation</a></li>
             </ul>
           </li>
           <li><a href="tarifs.html">Tarifs</a></li>
 
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">À Propos <strong class="caret"></strong></a>
             <ul class="dropdown-menu">
-              <li> <a href="partenaires.html">Partenaires</a></li>
+              <li> <a href="contact.html" class='untoggled'>Contact</a></li>
+              <li> <a href="partenaires.html" class='untoggled'>Partenaires</a></li>
               <li class='divider'></li>
-              <li> <a href="https://www.facebook.com/Espace-%C3%89questre-de-la-Bidauderie-1384011688304970/">Page Facebook</a></li>
-              <li> <a href="contact.html">Contact</a></li>
+              <li> <a target="_blank" href="https://www.facebook.com/Espace-%C3%89questre-de-la-Bidauderie-1384011688304970/" class='untoggled'>Page Facebook</a></li>
             </ul>
-            <li><a href="#" style="font-weight:bold">06.65.39.04.48</a></li>
+            <li><a href="contact.html" style="font-weight:bold">06.65.39.04.48</a></li>
           </li>
         </ul>
       </div>
@@ -60,9 +60,6 @@
         <div id="title">
             <div><p><span class='spacer'></span>LA BIDAUDERIE<span class='spacer'></span></p></div>
             <div><p><span class='spacer'></span>Equitation<span class='spacer'></span></p></div>
-        </div>
-        <div id="arrow" class="hidden-xs hidden-sm">
-          <a href="#"><img src='img/arrow.png' id='arrow-img'></a>
         </div>
     </div>
 
@@ -91,8 +88,8 @@
         </div>
         
         <div id="disc-icons">
-          <div><a href="centre-equestre.html#disciplines-container"><img src='img/cso.png'></a></div>
-          <div><a href="centre-equestre.html#disciplines-container"><img src='img/dress.png'></a></div>
+          <div class='hidden-xs'><a href="centre-equestre.html#disciplines-container"><img src='img/cso.png'></a></div>
+          <div class='hidden-xs'><a href="centre-equestre.html#disciplines-container"><img src='img/dress.png'></a></div>
           <div class='hidden-xs'><a href="centre-equestre.html#disciplines-container"><img src='img/cross.png'></a></div>
           <div class='hidden-xs'><a href="centre-equestre.html#disciplines-container"><img src='img/equifun.png'></a></div>
           <div class='hidden-sm hidden-xs'><a href="centre-equestre.html#disciplines-container"><img src='img/horse-ball.png'></a></div>
@@ -100,7 +97,7 @@
           <div class='hidden-sm hidden-xs'><a href="centre-equestre.html#disciplines-container"><img src='img/attelage.png'></a></div>
         </div>
         
-        <button class='btn btn-default hidden-md hidden-lg'><a id='know-more' href='centre-equestre.html'>Toutes nos disciplines</a></button>
+        <button class='btn btn-default hidden-md hidden-lg'><a id='know-more' href='centre-equestre.html'>Voir toutes nos disciplines</a></button>
         <button class='btn btn-default hidden-sm hidden-xs'><a id='know-more' href='centre-equestre.html'>En savoir +</a></button>
     </div>
   </div>
@@ -110,18 +107,22 @@
       <p>L'équitation pour tous</p>
     </div>
     <div id="equitation-pour-tous-container">
-      <div id="eq-bloc-1">
-        <p>COURS D'ÉQUITATION</p>
+      <div id="eq-bloc-1" class="container">
+        <p>COURS<br>D'ÉQUITATION</p>
+        <button>DÉCOUVRIR</button>
       </div>
       <div id="eq-bloc-2">
-        <div id="ecuries-prop">
-          <p>ÉCURIE DE PROPRIÉTAIRE</p>
+        <div id="ecuries-prop" class="container">
+          <p>ÉCURIE DE<br>PROPRIÉTAIRE</p>
+          <button>DÉCOUVRIR</button>
         </div>
-        <div id="accueil-collectivites">
+        <div id="accueil-collectivites" class="container">
           <p>COLLECTIVITÉS</p>
+          <button>DÉCOUVRIR</button>
         </div>
-        <div id="formation-moniteurs">
-          <p>FORMATION MONITEURS</p>
+        <div id="formation-moniteurs" class="container">
+          <p>FORMATION<br>MONITEURS</p>
+          <button>DÉCOUVRIR</button>
         </div>
       </div>
     </div>
@@ -168,51 +169,53 @@
       </button>
     </div>     
   </div>
+    
+  
+      
+      <footer>
+          <div class='container footer-container'>
+              <div class="footer-map col-md-4 col-sm-4 col-xs-12">
+                <iframe class='footer-frame' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.524235082784!2d2.0898604152647438!3d47.24545137916235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fada4641f015c9%3A0x58687334a497320e!2sLa+Bidauderie!5e0!3m2!1sen!2sfr!4v1488295245317" width="170" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="footer-address">
+                    <p>La Bidauderie Equitation</p>
+                    <p>Route de Neuvy - 18100 Vierzon<br>06 65 39 04 48<br>02 48 71 68 82</p>
+                </div>
+              </div>
+
+              <div class="footer-nav col-md-4 col-sm-4 col-xs-12">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                </ul>
+                <ul>
+                    <li><a href="centre-equestre.html">Centre Équestre</a></li>
+                    <li><a href="collectivites.html">Collectivités</a></li>
+                    <li><a href="formation-diplomante.html">Formation</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-social col-md-4 col-sm-4 col-xs-12">
+                <div id="social-title">
+                    <p>Rejoignez-nous !</p>
+                </div>
+                <div id="logo-social">
+                    <img src='img/facebook.png' class="js-social2">
+                </div>
+              </div>
+          </div>
+      </footer>
+    
+      <div class="legal-container">
+          <p style='margin-right:15px;'>Mentions Légales</p>
+          <p>|</p>
+          <p style='margin-left:15px;'>Site réalisé par  <a target="_blank"  href='https://www.linkedin.com/in/constancegobert/'>Constance Gobert</a></p>
+      </div>
+  
 
 
-
- <footer>
-  <div id="footer1-container">
-    <div id="map-container">
-      <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.524235082784!2d2.0898604152647438!3d47.24545137916235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fada4641f015c9%3A0x58687334a497320e!2sLa+Bidauderie!5e0!3m2!1sen!2sfr!4v1488295245317" width="170" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div id="address">
-        <p>La Bidauderie Equitation</p>
-        <p>La Bidauderie, 18100 Vierzon</p>
-        <p>02 48 71 68 82</p>
-      </div>
-    </div>
-    <div id="plan-site">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="club.html">Le Club</a></li>
-        <li><a href="centre-equestre.html">Activités</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Tarifs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#">Partenaires</a></li>
-      </ul>
-    </div>
-    <div id="social">
-      <div id="social-title">
-        <p>Rejoignez-nous !</p>
-      </div>
-      <div id="logo-social">
-        <img src='img/facebook.png' class="js-social2">
-        <img src='img/instagram-logo.png' class="js-social1">
-      </div>
-    </div>
-  </div>
-  <div id="footer2-container">
-    <ul>
-      <li><a href="#">Mentions Légales</a></li>
-      <li>|</li>
-      <li>Réalisé par <a href="#">Justine Dupuis</a> & <a href="#">Constance Gobert</a></li>
-    </ul>
-  </div>
-</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
