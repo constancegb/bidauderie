@@ -48,6 +48,17 @@ body {
         position: absolute;
         top: 1480px;
     }
+    iframe {
+        height: 40vh;
+    }
+    .info {
+        height: 40vh;
+    }
+    .footer-contact {
+        width: 100%;
+        position: absolute;
+        top: 590px;
+    }
 }
 
 @media screen and (min-width: 767.1px) and (max-width: 992px) {
@@ -74,6 +85,17 @@ body {
         position: absolute;
         top: 1250px;
     }
+    iframe {
+        height: 40vh;
+    }
+    .info {
+        height: 40vh;
+    }
+    .footer-contact {
+        width: 100%;
+        position: absolute;
+        top: 673px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -97,6 +119,17 @@ body {
         width: 100%;
         position: absolute;
         top: 1200px;
+    }
+    iframe {
+        height: 60vh;
+    }
+    .info {
+        height: 60vh;
+    }
+    .footer-contact {
+        width: 100%;
+        position: absolute;
+        top: 550px;
     }
 }
 
@@ -1118,12 +1151,10 @@ body.tarif {
 iframe {
     padding-right: 0 !important;
     padding-left: 0 !important;
-    height: 40vh;
 }
 
 .info {
     border: 1px solid white;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1141,6 +1172,7 @@ iframe {
     font-family: 'Dancing Script', sans-serif;
     font-size: 1.8em;
 }
+
 
 /*FORM*/
 
