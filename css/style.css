@@ -25,7 +25,7 @@ body {
         height: 70px !important;
     }
     #eq-title {
-        font-size: 1em;
+        font-size: 2.4em !important;
     }
     #eq-bloc-2 {
         flex-direction: column !important;
@@ -58,6 +58,17 @@ body {
         width: 100%;
         position: absolute;
         top: 590px;
+    }
+    #histoire-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #histoire-img {
+        margin-bottom: 25px;
+    }
+    .section-title p {
+        font-size: 2.3em !important;
     }
 }
 
@@ -95,6 +106,9 @@ body {
         width: 100%;
         position: absolute;
         top: 673px;
+    }
+    #histoire-img {
+        margin-bottom: 40px;
     }
 }
 
@@ -869,6 +883,10 @@ footer {
 
 /* ------ CAVALERIE ------*/
 
+#caval-title, #instal-title {
+    margin-bottom: 30px;
+}
+
 .poney-container {
   display: flex;
   flex-direction: column;
@@ -983,7 +1001,7 @@ footer {
   background-size: cover;
   background-position: center;
   opacity: 0.9;
-  z-index: -1;
+  z-index: 0;
   position: relative;
   max-width: 100vw;
   height:auto;
@@ -1008,7 +1026,11 @@ input, select, textarea {
     background-color: transparent;
     border: 1px solid white;
     border-radius: 5px;
+    z-index: 2;
 }
+
+
+
 
 
 /*DESCRIPTIF*/
@@ -1038,7 +1060,7 @@ input, select, textarea {
   background-position: center;
   background-attachment:fixed;
   opacity: 0.9;
-  z-index: -1;
+  z-index: 0;
   position: relative;
   max-width: 100vw;
   height:auto;
@@ -1051,7 +1073,7 @@ input, select, textarea {
   background-size: cover;
   background-position: center;
   background-attachment:fixed;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height:auto;
     min-height:100vh;
@@ -1059,7 +1081,7 @@ input, select, textarea {
 }
 
 .tarifs-container {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 body.tarif {
@@ -1072,6 +1094,10 @@ body.tarif {
 .empty-div {
     width: 100%;
     height: 250px;
+}
+
+.container td:first-child {
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -1091,7 +1117,7 @@ body.tarif {
 }
 
 #partenaires-title p {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 3em;
   color: #34495e;
@@ -1125,7 +1151,7 @@ body.tarif {
   background-size: cover;
   background-position: center;
   opacity: 0.9;
-  z-index: -1;
+  z-index: 0;
   position: relative;
   max-width: 100vw;
   height:auto;
@@ -1134,7 +1160,7 @@ body.tarif {
 }
 
 .div-black {
-  z-index: 0;
+  z-index: 1;
   min-width: 100vw;
   height:auto;
   width:auto;
