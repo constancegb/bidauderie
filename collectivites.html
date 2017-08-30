@@ -62,19 +62,24 @@
             
             <div class='col-left col-md-6 col-sm-12 col-xs-12'>
                 <div class="form-style-6">
-                    <h1>Contact Us</h1>
-                    <form>
-                        <input type="text" name="field1" placeholder="Your Name" />
-                        <input type="email" name="field2" placeholder="Email Address" />
-                        <select name="field4">
-                          <option value="Objet">Objet</option>
-                          <option value="reading">Reading</option>
-                          <option value="boxing">Boxing</option>
-                          <option value="debate">Debate</option>
+                    <h1>Obtenez un devis en ligne</h1>
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxNTyCT7_JKfcbMuyTyMuCEOMI-chyZNLMsEOT86uLgePHjyjaj/exec">
+                        <input type="text" name="name" placeholder=" Nom complet" />
+                        <input type="email" name="email" placeholder=" Adresse email" />
+                        <select name="type" style="color:#a6a6a6;">
+                          <option value="collectivités">Type de collectivités</option>
+                          <option value="scolaire">Groupe scolaire</option>
+                          <option value="CE">Comité d'entreprise</option>
+                          <option value="IME">IME</option>
+                          <option value="Autre">Autre</option>
                         </select>
-                        <textarea name="field3" placeholder="Type your Message"></textarea>
-                        <input type="submit" value="Send" />
+                        <textarea name="message" placeholder=" Message - Précisez l'âge moyen & le nombre de participants"></textarea>
+                        <input type="submit" value="ENVOYER" style="color:white;" />                        
                     </form>
+                    <div style="display:none;" id="thankyou_message">
+                            <h2>Merci de l'intérêt que vous nous portez. Nous reviendrons vers vous dans les plus brefs délais</h2>
+                    </div>
+                    
                 </div>
             </div>
             
@@ -100,6 +105,7 @@
             <div class="footer-address">
                 <p>La Bidauderie Equitation</p>
                 <p>Route de Neuvy - 18100 Vierzon<br>06 65 39 04 48<br>02 48 71 68 82</p>
+                <p class="hidden-xs">la.bidauderie@orange.fr</p>
             </div>
           </div>
 
@@ -137,7 +143,8 @@
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
-
+  <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
   </body>
   </html>
