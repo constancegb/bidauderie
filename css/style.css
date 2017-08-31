@@ -73,6 +73,14 @@ body {
     .bandeau {
         min-height: 30vh;
     }
+    .col-left {
+        border-bottom: 3px solid white;
+        padding-bottom: 60px;
+    }
+    input[type="submit"] {
+        width: 35% !important;
+}
+    
 }
 
 @media screen and (min-width: 767.1px) and (max-width: 992px) {
@@ -115,6 +123,13 @@ body {
     }
     .bandeau, .bandeau-ce {
         min-height: 40vh;
+    }
+    .col-left {
+        border-bottom: 3px solid white;
+        padding-bottom: 60px;
+    }
+    .col-right {
+        padding-left: 80px !important;
     }
 }
 
@@ -161,6 +176,13 @@ body {
         width: 100%;
         position: absolute;
         margin-top: 650px;
+    }
+    .col-left {
+        border-right: 1px solid white;
+    }
+    .col-right {
+        padding-top: 30px;
+        padding-left: 80px !important;
     }
     
 }
@@ -1019,42 +1041,71 @@ footer {
 |____   |____|   |____ |____  |____    |____    |  ...      
 */
 
+
+.div-black-collect {
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+  z-index: 1;
+  width: 100%;
+  height:auto;
+  min-height:90vh;
+  background-color: rgba(0,0,0,0.5);
+}
+
 .bg-collectivites {
   background-image: url(../img/diapo2.png);
   background-size: cover;
   background-position: center;
-  opacity: 0.9;
+  background-attachment:fixed;
   z-index: 0;
   position: relative;
   max-width: 100vw;
   height:auto;
   width:auto;
-  min-height:100vh;
+  min-height:90vh;
 }
 
 .groupe-container {
-    margin-top: 100px;
+    margin-top: 70px;
+}
+
+.col-left, .col-right {
+    margin-top: 50px;
 }
 
 /*FORMULAIRE*/
 
-.col-left {
-    border-right: 1px solid white;
-}
 
 input, select, textarea {
-    width: 80%;
-    min-height: 50px;
-    margin-bottom: 10px !important;
+    width: 85%;
+    margin-bottom: 15px !important;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 5px;
     z-index: 2;
-    color: white;
+    color: #a6a6a6 !important;
+}
+
+input, select {
+    height: 35px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"] {
+    height: 40px;
+    width: 25%;
 }
 
 #thankyou_message {
     z-index: 2;
+}
+
+.send-button:hover {
+    border: 2px solid white;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -1074,21 +1125,58 @@ input, select, textarea {
   font-style: italic;
 }
 
-.zaza {
-    color: #a6a6a6;
+/*Clears the input on focus*/
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+/*Clears the textarea on focus*/
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+#gform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.form-style-6 h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-style-6 h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.col-right p {
+    margin-top: 40px !important;
+    line-height: 180%;
+    font-size: 1.1em;
+}
 
 
 /*DESCRIPTIF*/
 
 .col-right {
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
 }
 
 
+/*FOOTER*/
 
-
+.footer-collect {
+    margin-top: 0;
+}
 
 
 
@@ -1209,18 +1297,11 @@ h4.panel-title {
   width: 100%;
   height:auto;
     min-height:100vh;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .tarifs-container {
     margin-top: 40px;
-}
-
-body.tarif {
-    background-image: url('img/tarif-bg.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
 }
 
 .empty-div {
@@ -1298,7 +1379,7 @@ body.tarif {
   width:auto;
   min-height:100vh;
   position: absolute;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .map {
@@ -1330,22 +1411,3 @@ iframe {
     font-family: 'Dancing Script', sans-serif;
     font-size: 1.8em;
 }
-
-
-/*FORM*/
-
-/*
-.left-col,
-.right-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-input, select, textarea {
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 3px;
-    color: white !important;
-}*/
