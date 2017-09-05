@@ -522,17 +522,27 @@ button #know-more:hover {
     letter-spacing: 2px;
 }
 
+#equitation-pour-tous-container button a {
+    text-decoration: none !important;
+}
+
 #eq-bloc-1 button,
 #accueil-collectivites button {
     border: 2px solid #34495e;
-    color: #34495e;
+    color: #34495e !important;
 }
 
 #eq-bloc-1 button:hover,
 #accueil-collectivites button:hover {
-    color: white;
+    color: white !important;
     background-color: #34495e;
 }
+
+#eq-bloc-1 button a:hover,
+#accueil-collectivites button a:hover {
+    color: white !important;
+}
+
 
 #eq-bloc-1 p,
 #accueil-collectivites p {
@@ -549,6 +559,11 @@ button #know-more:hover {
 #formation-moniteurs button:hover {
     color: #34495e;
     background-color: white;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* PARTENAIRES */
@@ -1116,7 +1131,7 @@ footer {
     padding-left: 20px !important;
 }
 
-.offres {
+#offres {
     padding-bottom: 30px;
 }
 
@@ -1608,4 +1623,40 @@ iframe {
 .info p:first-child {
     font-family: 'Dancing Script', sans-serif;
     font-size: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+|      |----   |-----     /\    |
+|      |       |         /  \   |
+|      |---    |   ——   |    |  |
+|      |       |    |   |----|  |
+|____  |____   |____|   |    |  |______
+*/
+
+
+
+.legal-title {
+    font-size: 2.3em;
+    color: #34495e;
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 130px 0 50px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.legal-txt {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: #34495e;
 }
