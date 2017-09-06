@@ -84,18 +84,22 @@ body {
         margin-top: 30px;
     }
     .ecole-equit, .proprietaires, decouverte {
-        margin-bottom: 40px;
+        margin-bottom: 90px;
     }
     .pcdf {
         margin-bottom: 30px;
     }
     .pcdf-img, .ccdf-img {
-        width: 150px;
-        min-height: 114px;
+        width: 130px;
+        min-height: 130px;
     }
     .pcdf-txt, .ccdf-txt {
         font-size: 1.35em;
         text-align: center;
+        padding-left: 20px;
+    }
+    .offre-title {
+        margin-top: 100px !important;
     }
 }
 
@@ -160,12 +164,14 @@ body {
         margin-bottom: 50px;
     }
     .pcdf-img, .ccdf-img {
-        width: 250px;
-        min-height: 218px;
+        width: 240px;
+        min-height: 240px;
+        margin-left: 70px;
     }
     .pcdf-txt, .ccdf-txt {
         font-size: 1.7em;
         text-align: center;
+        padding-left: 80px;
     }
 }
 
@@ -225,14 +231,24 @@ body {
     .offres-txt {
         margin-top: 30px;
     }
-    .pcdf-img, .ccdf-img {
-        width: 250px;
-        min-height: 218px;
+    .pcdf-img {
+        width: 240px;
+        min-height: 240px;
+    }
+    .ccdf-img {
+        width: 240px;
+        min-height: 240px;
     }
     .pcdf-txt, .ccdf-txt {
         font-size: 1.8em;
+        padding-left: 50px;
     }
 }
+
+
+
+
+
 
 
 /*
@@ -261,19 +277,10 @@ ul.navbar-nav li a {
  color: white !important;
 }
 
-
-
-/*
-.dropdown-menu li {
-    background-color: #f2f2f2 !important;
-}
-*/
-
 .navbar-inverse .navbar-nav li a:hover {
     color: #87a7c5 !important;
     font-weight: 800 !important;
 }
-
 
 .navbar-header button {
   margin-top: 16px;
@@ -1179,13 +1186,13 @@ footer {
 }
 
 .pcdf-img {
-    background-image: url(../img/label-poney.png);
+    background-image: url(../img/label-poney1.png);
     background-size: cover;
     background-position: center;
 }
 
 .ccdf-img {
-    background-image: url(../img/label-cheval.png);
+    background-image: url(../img/label-cheval1.png);
     background-size: cover;
     background-position: center;
 }
@@ -1194,7 +1201,6 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
 }
 
 .pcdf-txt, .ccdf-txt {
@@ -1216,6 +1222,10 @@ footer {
     padding: 10px;
     border: 1px solid red;
     height: 68px;
+}
+
+.first-row {
+    margin-top: 10px;
 }
 
 .disc {
@@ -1369,12 +1379,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     margin-bottom: 20px;
 }
 
-.col-right p {
-    margin-top: 40px !important;
-    line-height: 180%;
-    font-size: 1.1em;
-}
-
 
 /*DESCRIPTIF*/
 
@@ -1382,6 +1386,16 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
+}
+
+.col-right h2 {
+    line-height: 150%;
+}
+
+.col-right p {
+    margin-top: 30px !important;
+    line-height: 180%;
+    font-size: 1.1em;
 }
 
 
